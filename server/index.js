@@ -16,11 +16,11 @@ import cookieParser from "cookie-parser";
 
 dotenv.config();
 const app = express();
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.json({ limit: '10mb' }));
+app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 app.use(cookieParser());
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: process.env.FRONTEND_URL || 'http://localhost:3000' ,
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: [
@@ -46,21 +46,33 @@ app.use('/api/auth', authRoutes)
 app.use('/api/cart', cartRoutes);
 app.use('/api/orders', orderRoutes);
 
+// Serve static files from client build (if serving full-stack)
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../frontend/build')));
+  
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../frontend/build/index.html'));
+  });
+}
 
+// Health check endpoint
+app.get('/health', (req, res) => {
+  res.status(200).json({ status: 'OK', message: 'Server is running' });
+});
 
 //Global Error Handler
 app.use(errorHandler);
 
 
 
-const port = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4000;
 mongoose.connect(process.env.MONGO_URI, {  
 }).then(() => {
     console.log("database connection");
     // optional : seed data
     // Product.insertMany(data.products)
     // console.log(crypto.randomBytes(32).toString('hex'));
-    app.listen(port, () => {
+    app.listen(PORT, () => {
         console.log(`server is running in http://localhost:${port}/`)
     });
 }).catch((error) => console.log(`${error}`));
