@@ -12,9 +12,16 @@ import helmet from 'helmet';
 import { errorHandler } from './middleware/errorHandler.js';
 import crypto from 'crypto';
 import cookieParser from "cookie-parser";
+import path from 'path';
+import { fileURLToPath } from 'url';
+
 
 
 dotenv.config();
+// ES module equivalent of __dirname
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 const app = express();
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
