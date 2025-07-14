@@ -1,4 +1,3 @@
-
 # 🛒 MERN Amazon Clone
 
 A full-featured Amazon-like eCommerce web application built using the **MERN stack** with professional features including product search, reviews, cart, checkout, PayPal/Paymob payment integration, order tracking, and user authentication.
@@ -8,54 +7,71 @@ A full-featured Amazon-like eCommerce web application built using the **MERN sta
 ## 🖼️ Screenshots
 
 ### 🏠 Home Page
+
 ![amazon_clone](/client/public/images/homePage.png)
 
 ### login page
+
 ![Login](/client/public/images/sign.png)
 
 ### Forgot Password
+
 ![Forgot Password](/client/public/images/forgot.png)
 
 ### VerifyCode
+
 ![Verify Code](/client/public/images/verifyCode.png)
 
 ### reset Password
+
 ![Reset Password](/client/public/images/reset.png)
 
 ### Register Page
+
 ![Register](/client/public/images/signUp.png)
 
 ### Verify Email
+
 ![Verify Email](/client/public/images/verifyEm.png)
 
 ### 📦 Product Details
+
 ![productDetails](/client/public/images/detail.png)
 
 ### 🔎 Search Results
+
 ![searchResults](/client/public/images/search.png)
 
 ### 🛍️ Shopping Cart
+
 ![cart](/client/public/images/cart.png)
 
 ### 🚚 Shipping Address
+
 ![shipping](/client/public/images/ship.png)
 
 ### 💳 Payment Method Selection
+
 ![paymentMethod](/client/public/images/paymt.png)
 
 ### 🧾 Place Order
+
 ![placeOrder](/client/public/images/place.png)
 
 ### 📄 Order Summary & Payment
+
 ![orderSummary](/client/public/images/summary.png)
 
 ### 💰 Paymob Wallet Integration
+
 ![paymob](/client/public/images/payment.png)
 
 ### 👤 User Profile
+
 ![profilePage](/client/public/images/profilePage.png)
 
 ### 📜 Order History
+
 ![orderHistory](/client/public/images/order.png)
 
 ---
@@ -81,11 +97,11 @@ A full-featured Amazon-like eCommerce web application built using the **MERN sta
 
 - React, Redux Toolkit, RTK Query
 - Tailwind CSS, React Router DOM
-- `react-hook-form` – Form validation  
+- `react-hook-form` – Form validation
   ```js
   import { useForm } from 'react-hook-form';
   ```
-- `react-hot-toast` – Notifications  
+- `react-hot-toast` – Notifications
   ```js
   import toast from 'react-hot-toast';
   ```
@@ -94,23 +110,27 @@ A full-featured Amazon-like eCommerce web application built using the **MERN sta
 
 - Node.js, Express.js, MongoDB, Mongoose
 - JWT Authentication (`jsonwebtoken`, `bcryptjs`)
-- CORS, Helmet, Cookie-Parser  
+- CORS, Helmet, Cookie-Parser
+
   ```js
   import cors from 'cors';
   app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
   ```
 
-- Nodemailer for email verification/reset  
+- Nodemailer for email verification/reset
+
   ```js
   import nodemailer from 'nodemailer';
   ```
 
-- Joi for input validation  
+- Joi for input validation
+
   ```js
   import Joi from 'joi';
   ```
 
-- `express-async-handler` for clean async routes  
+- `express-async-handler` for clean async routes
+
   ```js
   import asyncHandler from 'express-async-handler';
   ```
@@ -140,6 +160,7 @@ npm start
 ```
 
 > Create a `.env` file:
+
 ```env
 PORT=4000
 MONGO_URI=your_mongodb_connection_string
