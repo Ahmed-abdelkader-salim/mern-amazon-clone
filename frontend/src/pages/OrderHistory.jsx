@@ -7,7 +7,6 @@ import { useGetOrderQuery } from '../app/api';
 const  OrderHistory = () =>  {
   const { data: ordersData, refetch, isFetching } = useGetOrderQuery();
 const orders = ordersData?.data;
-console.log(orders)
 
 const [filteredOrders, setFilteredOrders] = useState([]);
 const [searchTerm, setSearchTerm] = useState('');
