@@ -16,7 +16,7 @@ router.post("/merge", isAuth, mergeCart);
 router.post("/add", optionalAuth, addToCart);
 
 // applay cuponns
-router.post("/coupons", isAuth, applyCoupons)
+router.post("/coupons", isAuth, applyCoupons);
 
 // Get itme Count
 router.get("/count", optionalAuth, getItemCount);
