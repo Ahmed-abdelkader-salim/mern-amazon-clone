@@ -80,7 +80,7 @@ mongoose.connect(process.env.MONGO_URI, {
     // Product.insertMany(data.products)
     // console.log(crypto.randomBytes(32).toString('hex'));
     app.listen(PORT, () => {
-        console.log(`server is running in http://localhost:${port}/`)
+        console.log(`server is running in http://localhost:${PORT}/`)
     });
 }).catch((error) => console.log(`${error}`));
 
