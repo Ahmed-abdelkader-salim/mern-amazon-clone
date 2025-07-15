@@ -12,7 +12,6 @@ import helmet from 'helmet';
 import { errorHandler } from './middleware/errorHandler.js';
 import crypto from 'crypto';
 import cookieParser from "cookie-parser";
-import path from 'path';
 
 
 
@@ -51,14 +50,7 @@ app.use('/api/auth', authRoutes)
 app.use('/api/cart', cartRoutes);
 app.use('/api/orders', orderRoutes);
 
-// Serve static files from client build (if serving full-stack)
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../frontend/build')));
-  
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../frontend/build/index.html'));
-  });
-}
+
 
 
 
