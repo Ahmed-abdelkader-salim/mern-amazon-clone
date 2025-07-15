@@ -12,9 +12,9 @@ const router = express.Router();
 
 router.post('/shipping', isAuth, saveShippingAddress);
 router.post('/paymentmethod', isAuth, SavePaymentMethod);
-router.post('/placeorder', isAuth, placeOrder)
-router.get('/pending', isAuth, getPendingOrder)
-router.get('/order/:id', isAuth, getOrderById)
+router.post('/placeorder', isAuth, placeOrder);
+router.get('/pending', isAuth, getPendingOrder);
+router.get('/order/:id', isAuth, getOrderById);
 router.get('/', isAuth, getOrders);
 
 
