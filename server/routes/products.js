@@ -1,10 +1,9 @@
 import express from "express";
 const router = express.Router();
-import { getProducts, createProduct, updateProduct, deleteProduct, getProductById, 
+import { getProducts, getProductById, 
     getProductBySlug, getCategories, addReview,
     searchProduct,
     getBrands,
-    getAllProducts,
     getSearchSuggestions
  } from "../controllers/productController.js";
 import { isAuth } from "../middleware/auth.js";
