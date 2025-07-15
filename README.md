@@ -4,75 +4,78 @@ A full-featured Amazon-like eCommerce web application built using the **MERN sta
 
 ---
 
+
+- 👉 Render : [https://mern-amazon-clone-88wosmngr-ahmed-abdelkader-salims-projects.vercel.app/](https://mern-amazon-clone-88wosmngr-ahmed-abdelkader-salims-projects.vercel.app/)
+
 ## 🖼️ Screenshots
 
 ### 🏠 Home Page
 
-![amazon_clone](/client/public/images/homePage.png)
+![amazon_clone](/frontend/public/images/homePage.png)
 
 ### login page
 
-![Login](/client/public/images/sign.png)
+![Login](/frontend/public/images/sign.png)
 
 ### Forgot Password
 
-![Forgot Password](/client/public/images/forgot.png)
+![Forgot Password](/frontend/public/images/forgot.png)
 
 ### VerifyCode
 
-![Verify Code](/client/public/images/verifyCode.png)
+![Verify Code](/frontend/public/images/verifyCode.png)
 
 ### reset Password
 
-![Reset Password](/client/public/images/reset.png)
+![Reset Password](/frontend/public/images/reset.png)
 
 ### Register Page
 
-![Register](/client/public/images/signUp.png)
+![Register](/frontend/public/images/signUp.png)
 
 ### Verify Email
 
-![Verify Email](/client/public/images/verifyEm.png)
+![Verify Email](/frontend/public/images/verifyEm.png)
 
 ### 📦 Product Details
 
-![productDetails](/client/public/images/detail.png)
+![productDetails](/frontend/public/images/detail.png)
 
 ### 🔎 Search Results
 
-![searchResults](/client/public/images/search.png)
+![searchResults](/frontend/public/images/search.png)
 
 ### 🛍️ Shopping Cart
 
-![cart](/client/public/images/cart.png)
+![cart](/frontend/public/images/cart.png)
 
 ### 🚚 Shipping Address
 
-![shipping](/client/public/images/ship.png)
+![shipping](/frontend/public/images/ship.png)
 
 ### 💳 Payment Method Selection
 
-![paymentMethod](/client/public/images/paymt.png)
+![paymentMethod](/frontend/public/images/paymt.png)
 
 ### 🧾 Place Order
 
-![placeOrder](/client/public/images/place.png)
+![placeOrder](/frontend/public/images/place.png)
 
 ### 📄 Order Summary & Payment
 
-![orderSummary](/client/public/images/summary.png)
+![orderSummary](/frontend/public/images/summary.png)
 
 ### 💰 Paymob Wallet Integration
 
-![paymob](/client/public/images/payment.png)
+![paymob](/frontend/public/images/payment.png)
 
 ### 👤 User Profile
 
-![profilePage](/client/public/images/profilePage.png)
+![profilePage](/frontend/public/images/profilePage.png)
 
 ### 📜 Order History
 
-![orderHistory](/client/public/images/order.png)
+![orderHistory](/frontend/public/images/order.png)
 
 ---
 
