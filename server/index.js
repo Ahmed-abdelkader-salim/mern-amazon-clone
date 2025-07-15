@@ -78,7 +78,7 @@ mongoose.connect(process.env.MONGO_URI, {
     // optional : seed data
     // Product.insertMany(data.products)
     // console.log(crypto.randomBytes(32).toString('hex'));
-    app.listen(PORT, () => {
+    app.listen(PORT, "0.0.0.0", () => {
         console.log(`server is running in http://localhost:${PORT}/`)
     });
 }).catch((error) => console.log(`${error}`));
