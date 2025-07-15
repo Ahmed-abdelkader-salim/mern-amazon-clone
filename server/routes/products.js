@@ -49,18 +49,7 @@ router.post("/:id/reviews",  isAuth, addReview);
           //         Admin Routes     //
 // ================================================= //
 
-// get product with   pagination
-router.get("/admin", isAuth, isAdmin, getAllProducts)
 
-// create new product
-router.post("/admin/add", isAuth, isAdmin, validateRequest(productValidatorSchema), createProduct);
-
-// update product
-router.put('/admin/update/:id', isAuth, isAdmin, validateRequest(productValidatorSchema), updateProduct);
-
-
-// delete product
-router.delete('/admin/:id', isAuth, isAdmin, deleteProduct)
 
 
 export default router;
