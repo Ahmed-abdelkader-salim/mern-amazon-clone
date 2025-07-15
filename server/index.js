@@ -50,7 +50,19 @@ app.use('/api/auth', authRoutes)
 app.use('/api/cart', cartRoutes);
 app.use('/api/orders', orderRoutes);
 
-
+/ API status endpoint
+app.get('/api', (req, res) => {
+    res.json({
+        message: 'API is working',
+        version: '1.0.0',
+        endpoints: [
+            '/api/products',
+            '/api/auth',
+            '/api/cart',
+            '/api/orders'
+        ]
+    });
+});
 
 
 
